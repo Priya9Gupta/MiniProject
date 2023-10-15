@@ -12,7 +12,7 @@ const ViewEbook = () => {
         console.log(data);
         setEbookData(data);
     }
-
+      
     useEffect(() => {
       fetchEbookData();
     }, []);
@@ -22,22 +22,22 @@ const ViewEbook = () => {
         if(ebookData!==null){
             return <div className='card'>
                     <div className="card-body">
-                        <img className='d-block m-auto w-75' src={"http://localhost:5000/"+ebookData.Image} alt="" />
-                        <h1>{ebookData.Title}</h1> 
+                        <img className='m-1 w-50' src={"http://localhost:5000/"+ebookData.Image} alt="" />
+                        <h2>{ebookData.Title}</h2> 
 
-                        <a href={"http://localhost:5000/"+ebookData.File} target='_blank'>Read Novel</a>
+                        <a href={"http://localhost:5000/"+ebookData.File} target='_blank' style={{fontSize:'20px'}}>Read Novel</a>
                     </div>
             </div>
         }
     }
     
   return (
-    <div>
-        <div className="container">
+    <div style={{backgroundRepeat:'no-repeat',backgroundSize:'cover',width:'1300px',height:'700px',backgroundImage:'url("https://p4.wallpaperbetter.com/wallpaper/368/945/162/landscape-nature-street-night-wallpaper-preview.jpg")'}}>
+        <div style={{width:'350px',height:'1300px',marginLeft:'400px',paddingTop:'120px'}}>
             {displayEbook()}
         </div>
     </div>
   )
 }
 
-export default ViewEbook
+export default ViewEbook;

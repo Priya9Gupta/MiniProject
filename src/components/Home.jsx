@@ -6,7 +6,7 @@ const Home = () => {
 
 
     <div className='Home'>
-      <header className='home-header'>
+     <header className='home-header'>
       <h2 className='text-center display-3 fw-bold text-white'>Welcome to my Home page</h2>
       <h4 className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, assumenda.</h4>
       </header>
@@ -16,34 +16,34 @@ const Home = () => {
       </div>
 
 
-      <div className='middle1' style={{ height: '300px', width: '1300px', paddingLeft: '100px', marginTop: '20px' }}>
-        <div className='card' style={{ width: '400px', height: '400px', paddingLeft: '10px' }} >
-          <h2 style={{ color: 'red' }}>send message to Author</h2>
-          <input className='mb-1' style={{ width: '200px' }} type="text" placeholder='Name' /><br />
-          <input className='mb-1' style={{ width: '200px' }} type="text" placeholder='Email' /><br />
-          <input className='mb-2' style={{ width: '200px' }} type="text" placeholder='Write Your Message here' /><br />
-          <button className='btn btn-primary align-items-center' style={{ width: '150px' }}>Send message</button>
+      <div className='middle1' style={{ height: '300px', width: '1300px', paddingLeft: '400px', marginTop: '5px',Border:'none',backgroundImage:'url("https://static.vecteezy.com/system/resources/thumbnails/001/882/922/small/book-seamless-pattern-background-vector.jpg")' }}>
+        <div className='card d-flex align-items-center justify-content-center' style={{ width: '400px', height: '300px',background:'transparent' }} >
+          <h2 style={{ color: 'Black',marginBottom:'30px',backgroundColor:'whitesmoke',borderRadius:'15px',border:'1px solid transparent' }}>send message to Author</h2>
+          <input className='mb-1 form-control' style={{ width: '300px' ,paddingLeft:'10px'}} type="text" placeholder='Name' /><br />
+          <input className='mb-1 form-control' style={{ width: '300px' ,paddingLeft:'10px'}} type="text" placeholder='Email' /><br />
+          <input className='mb-2 form-control' style={{ width: '300px' ,paddingLeft:'10px'}} type="text" placeholder='Write Your Message here' /><br />
+          <button className='btn btn-primary w-50 'style={{paddingLeft:'10px'}} >Send message</button>
         </div>
       </div>
 
-      <h3 style={{ textAlign: 'center' }}>Top Interesting Novels</h3>
 
 
       <div className=' card col-md-3' style={{ display: 'flex', flexDirection: 'row', width: '1300px', height: '400px' }} >
 
-        <div className='card p-3' >
+        <div className='card p-3 mx-2 my-3' >
           <img style={{ height: '400px', border: 'solid black' }} src="https://m.media-amazon.com/images/I/814BAk-r5HL._AC_UF1000,1000_QL80_.jpg" alt="" />
+      {/* <h3 style={{ textAlign: 'center' }}>Top Interesting Novels</h3> */}
 
         </div>
-        <div className='card p-3' >
+        <div className='card p-3 mx-2 my-3' >
           <img style={{ height: '400px', border: 'solid black' }} src="https://m.media-amazon.com/images/I/51AHZGhzZEL.jpg" alt="" />
 
         </div>
-        <div className='card p-3' >
+        <div className='card p-3 mx-2 my-3' >
           <img style={{ height: '400px', border: 'solid black' }} src="https://m.media-amazon.com/images/I/91r3afbnQsL._AC_UF1000,1000_QL80_.jpg" alt="" />
 
         </div>
-        <div className='card p-3' >
+        <div className='card p-3 mx-2 my-3' >
           <img style={{ height: '400px', border: 'solid black' }} src="https://m.media-amazon.com/images/I/81zE42gT3xL._AC_UF1000,1000_QL80_.jpg" alt="" />
 
         </div>

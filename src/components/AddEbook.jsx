@@ -101,13 +101,16 @@ const AddEbook = () => {
                   <input className='form-control' type="text" placeholder='Title' id="Title" onChange={add.handleChange} value={add.values.Title} /><br />
                 </div>
                 <div className="col-md-6">
-                  <input className='form-control' type="text" placeholder='Description' id="Description" onChange={add.handleChange} value={add.values.Description} /><br />
+                <input className='form-control' type="text" placeholder='Author' id="Author" onChange={add.handleChange} value={add.values.Author} /><br />
+
                 </div>
               </div>
-              <input className='form-control' type="text" placeholder='Author' id="Author" onChange={add.handleChange} value={add.values.Author} /><br />
+              {/* <input className='form-control' type="text" placeholder='Author' id="Author" onChange={add.handleChange} value={add.values.Author} /><br /> */}
               <input className='form-control' type="number" placeholder='Year' id="Year" onChange={add.handleChange} value={add.values.Year} /><br />
               <input className='form-control' type="text" placeholder='Type' id="Type" onChange={add.handleChange} value={add.values.Type} /><br />
               <input className='form-control' type="text" placeholder='Category' id="Category" onChange={add.handleChange} value={add.values.Category} /><br />
+              <input className='form-control' type="text" placeholder='Description' id="Description" onChange={add.handleChange} value={add.values.Description} /><br />
+
               <label>Upload Image</label>
               <input className='form-control' type="file" placeholder='Upload Image' onChange={uploadImage} /><br />
               <label htmlFor="">Upload File</label>

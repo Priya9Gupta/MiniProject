@@ -68,10 +68,10 @@ const Login = () => {
         <form onSubmit={LoginForm.handleSubmit}>
             
           <label htmlFor="">Email</label>
-          <input className='form-control mb-4' type="text" id='email' />
+          <input className='form-control mb-4' type="text" id='Email' onChange={LoginForm.handleChange} value={LoginForm.values.Email} />
           <label htmlFor="">Password</label>
-          <input className='form-control mb-4' type="password" id='password' />
-          <button className='btn btn-primary mb-4' >Login</button>
+          <input className='form-control mb-4' type="password" id='Password' onChange={LoginForm.handleChange} value={LoginForm.values.Password} />
+          <button type="submit" className='btn btn-primary mb-4' >Login</button>
         </form>
       </div>
            

@@ -26,18 +26,7 @@ const BrowseEbook = () => {
   fetchEbookData();
   }, []);
   
-//   const deleteUser =async(id)=>{
-//     console.log(id)
-//     const res = await fetch('http://localhost:5000/user/delete/'+id,{
-//     method :'DELETE'
-//    });
-//    console.log(res.status)
-//    // to show the deleted component on page without refresh the page.
-//    if (res.status === 200){
-//    fetchUserData();
-//    toast.success('User Deleted Successfully');
-//    }
-//   }
+
 
 
 const displayEbooks = () => {
@@ -48,10 +37,11 @@ const displayEbooks = () => {
 
    <div className='card'>
 
-    <img className='card-img-top'  src={"http://localhost:5000/"+ebook.Image} alt="" />
+    <img className='card-img-top' style={{height:'400px'}} src={"http://localhost:5000/"+ebook.Image} alt="" />
     <div className='card-body'>
         <p>{ebook.Category}</p>
-        <h4>{ebook.Title}</h4>
+        <h>{ebook.Title}</h>
+        <h5>{ebook.Author}</h5>
         <p className='fw-bold'>{ebook.Author}</p>
        <Link to={'/view/'+ebook._id} className='btn btn-primary'>View more</Link>
 
@@ -62,12 +52,11 @@ const displayEbooks = () => {
 })
 }
   
-
+            
   return (
-
-    <div className='vh-100'>
-        <h2 className='text-center'>EBook Browser</h2>
-     <div className='container'>
+           
+    <div className='vh-150' style={{backgroundImage:'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzs5zkATRBmBgGuxhg5EV7aJm7CGGEeOTi1DRtFpViRKCEGWssp3EMHeVoMg_jelnyp4w&usqp=CAU")'}}>
+     <div className='container py-4 '>
        <div className='row'>
         {displayEbooks()}
        </div>
