@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { useFormik } from 'formik';
 import Swal from 'sweetalert2';
+import { motion } from 'framer-motion';
+
 
 const AddEbook = () => {
 
   const [selFile, setSelFile] = useState('');
   const [selImg, setSelImg] = useState('');
-
+  
   const add = useFormik({
     initialValues: {
       Title: '',
@@ -88,7 +90,12 @@ const AddEbook = () => {
 
 
   return (
-    <div style={{ backgroundImage: 'url("https://png.pngtree.com/thumb_back/fh260/background/20200731/pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg")' }}>
+    <motion.div
+    initial={{ opacity: 0, scale: 0.1 }}
+      animate={{ opacity: 1, scale: 1}}
+      transition={{ duration: 0.3, type:'spring',damping: 15, stiffness: 100 }}
+    
+    style={{ backgroundImage: 'url("https://png.pngtree.com/thumb_back/fh260/background/20200731/pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg")' }}>
       <div className="container">
 
         <div className=' justify-content-center d-flex align-item-center' >
@@ -126,7 +133,7 @@ const AddEbook = () => {
 
 
 
-    </div>
+    </motion.div>
   )
 }
 
